@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "title": "Naruto Uzumaki Funko Pop",
+    "price": "$14.99",
+    "character": "Naruto Uzumaki",
+    "variant": "Standard",
+    "rarity": "Common",
+    "estimated_value": "Medium",
+    "category": "Anime",
+    "image_url": "https://example.com/images/naruto_funko_pop.jpg",
+    "source_url": "https://funko.fandom.com/wiki/Pop!",
+    "extracted_at": "2023-10-03T12:00:00Z"
+  },
+  {
+    "id": "2",
+    "title": "Darth Vader Glow-in-the-Dark Funko Pop",
+    "price": "$24.99",
+    "character": "Darth Vader",
+    "variant": "Exclusive",
+    "rarity": "Rare",
+    "estimated_value": "High",
+    "category": "Movies",
+    "image_url": "https://example.com/images/darth_vader_glow_funko_pop.jpg",
+    "source_url": "https://funko.fandom.com/wiki/Pop!",
+    "extracted_at": "2023-10-03T12:00:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Eleven with Eggos Funko Pop",
+    "price": "$11.99",
+    "character": "Eleven",
+    "variant": "Standard",
+    "rarity": "Common",
+    "estimated_value": "Low",
+    "category": "TV",
+    "image_url": "https://example.com/images/eleven_eggos_funko_pop.jpg",
+    "source_url": "https://funko.fandom.com/wiki/Pop!",
+    "extracted_at": "2023-10-03T12:00:00Z"
+  },
+  {
+    "id": "4",
+    "title": "Iron Man Mark 50 Funko Pop",
+    "price": "$19.99",
+    "character": "Iron Man",
+    "variant": "Chase",
+    "rarity": "Exclusive",
+    "estimated_value": "Collector",
+    "category": "Movies",
+    "image_url": "https://example.com/images/iron_man_mark50_funko_pop.jpg",
+    "source_url": "https://funko.fandom.com/wiki/Pop!",
+    "extracted_at": "2023-10-03T12:00:00Z"
+  },
+  {
+    "id": "5",
+    "title": "Goku Ultra Instinct Funko Pop",
+    "price": "$17.99",
+    "character": "Goku",
+    "variant": "Exclusive",
+    "rarity": "Rare",
+    "estimated_value": "High",
+    "category": "Anime",
+    "image_url": "https://example.com/images/goku_ultra_instinct_funko_pop.jpg",
+    "source_url": "https://funko.fandom.com/wiki/Pop!",
+    "extracted_at": "2023-10-03T12:00:00Z"
+  }
+]
