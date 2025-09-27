@@ -8,8 +8,8 @@ import plotly.graph_objects as go
 @st.cache_resource
 def init_supabase():
     return create_client(
-        st.secrets["SUPABASE_URL"],
-        st.secrets["SUPABASE_KEY"]
+        ["https://duawsrbpkgwpytnyjkvu.supabase.co"],
+        ["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR1YXdzcmJwa2d3cHl0bnlqa3Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg3MzUyNDcsImV4cCI6MjA3NDMxMTI0N30.R1a4zZGgtll2T7cvS_p9CQK4dDkZ8q0pUSsGAoedRig"]
     )
 
 def get_funko_pops():
