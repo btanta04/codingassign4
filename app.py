@@ -1,9 +1,10 @@
 import streamlit as st
 from supabase import create_client
 import pandas as pd
+import os
 
-SUPABASE_URL = "https://duawsrbpkgwpytnyjkvu.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR1YXdzcmJwa2d3cHl0bnlqa3Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg3MzUyNDcsImV4cCI6MjA3NDMxMTI0N30.R1a4zZGgtll2T7cvS_p9CQK4dDkZ8q0pUSsGAoedRig"
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://duawsrbpkgwpytnyjkvu.supabase.co")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR1YXdzcmJwa2d3cHl0bnlqa3Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg3MzUyNDcsImV4cCI6MjA3NDMxMTI0N30.R1a4zZGgtll2T7cvS_p9CQK4dDkZ8q0pUSsGAoedRig")
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 data = supabase.table("funko_pops").select("*").execute().data

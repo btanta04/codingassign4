@@ -1,4 +1,4 @@
-# modal_app.py
+# modal_app.py - FIXED
 import modal
 
 app = modal.App("funko-pop-analyzer")
@@ -10,16 +10,23 @@ image = modal.Image.debian_slim().pip_install(
     "plotly",
     "requests",
     "beautifulsoup4",
-    "openai",
-    "python-dotenv"
+    "openai"
 )
 
-@app.function(image=image)
+# Use Modal secrets instead of hardcoded values
+@app.function(
+    image=image,
+    secrets=[
+        modal.Secret.from_name("demon-slayer-secret")
+    ]
+)
 @modal.web_server(8000)
 def run_streamlit():
     import subprocess
-    subprocess.run([
-        "streamlit", "run", "app.py",
+    import os
+    os.environ["STREAMLIT_SERVER_PORT"] = "8000"
+    subprocess.Popen([
+        "streamlit", "run", "app.py", 
         "--server.port=8000", 
         "--server.address=0.0.0.0"
     ])

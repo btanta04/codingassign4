@@ -5,7 +5,7 @@ import os
 
 def get_llm_client():
     endpoint = "https://cdong1--azure-proxy-web-app.modal.run"
-    api_key = "supersecretkey"  # Use your actual key
+    api_key = "supersecretkey"  
     deployment_name = "gpt-4o"
     
     client = OpenAI(
